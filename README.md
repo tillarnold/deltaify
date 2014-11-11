@@ -5,3 +5,4 @@
 [![Coverage Status](https://img.shields.io/coveralls/tillarnold/deltaify.svg)](https://coveralls.io/r/tillarnold/deltaify?branch=master)
 
 
+> Make a function that measures the elapsed time since the function was called the last time
