@@ -4,7 +4,9 @@ module.exports = function deltaify(f, thisValue) {
 
   return function deltaifiedFunction() {
     var newTime = Date.now();
-    f.call(thisValue, newTime - time);
+    var args = Array.prototype.slice.call(arguments);
+    args.unshift(newTime - time);
+    f.apply(thisValue, args);
     time = newTime;
   };
 
