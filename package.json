@@ -1,12 +1,12 @@
 {
   "name": "deltaify",
   "version": "0.0.0",
-  "description": "",
+  "description": "Make a function that measures the elapsed time since the function was called the last time",
   "main": "index.js",
   "scripts": {
     "test": "node test/test.js",
     "test-coveralls": "istanbul cover test/test.js  && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
-    "jshint": "jshint test/* lib/*",
+    "jshint": "jshint test/* index.js",
     "test-beefy": "beefy test/beefy.js -v",
     "test-beefy-live": "beefy test/beefy.js -v --live",
     "coverage": "rm -rf coverage && istanbul cover test/test.js && istanbul report html && serve coverage"
