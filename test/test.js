@@ -3,6 +3,7 @@ var deltaify = require('../');
 
 test('Default values', function(t) {
   t.plan(5);
+  var d;
   var i = 0;
 
   var f = deltaify(function(delta) {
@@ -13,6 +14,6 @@ test('Default values', function(t) {
     }
   });
 
-  var d = setInterval(f, 100);
+  d = setInterval(f, 100);
 
 });
